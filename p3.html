@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Styles Example</title>
+    <link rel="stylesheet" href="stylesp3.css"> <!-- External CSS -->
+    <style>
+        /* Embedded CSS */
+        body {
+            background-image: url('icon.jpg');
+            /* Background image */
+            background-repeat: repeat-x;
+            /* Tile horizontally */
+            background-attachment: fixed;
+            /* Fixed background */
+            background-size: 20% auto;
+            /* Set width to 100% and height to auto */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            /* White background with transparency */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            /* Arrange items in a column */
+            gap: 20px;
+            /* Space between rows */
+        }
+
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        h2 {
+            color: #555;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+            margin: 0;
+        }
+
+        p {
+            font-size: 1.5em;
+            /* 1.5 times larger */
+            color: red;
+            /* Red text */
+            line-height: 1.6;
+            /* Improved line spacing */
+        }
+
+        h1,
+        h2 {
+            padding: 0.5em;
+            /* Padding */
+            border: 2px groove #4CAF50;
+            /* Grooved border */
+            margin: 0.5em 0;
+            /* Margin */
+        }
+
+        .z-index-demo {
+            position: relative;
+            z-index: 1;
+            /* Lower z-index */
+            background-color: rgba(255, 255, 0, 0.7);
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .z-index-demo-overlay {
+            position: absolute;
+            z-index: 2;
+            /* Higher z-index */
+            background-color: rgba(255, 0, 0, 0.7);
+            padding: 20px;
+            top: 20px;
+            left: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>This is an H1 Heading</h1>
+
+        <h2>This is an H2 Heading</h2>
+
+        <p>This paragraph demonstrates the inline, embedded, and external CSS styles.</p>
+
+        <div class="z-index-demo">
+            This is a div with a lower z-index.
+            <div class="z-index-demo-overlay">
+                This is an overlay with a higher z-index.
+            </div>
+        </div>
+
+        <p style="color: blue;">This paragraph uses inline CSS to color the text blue.</p>
+    </div>
+
+</body>
+
+</html>

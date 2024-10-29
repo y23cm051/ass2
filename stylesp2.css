@@ -1,0 +1,91 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #4CAF50;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+.unordered-list {
+    list-style-type: circle; /* Changed to circle bullets */
+    padding-left: 20px;
+}
+
+.ordered-list {
+    list-style-type: decimal; /* Standard decimal bullets */
+    padding-left: 20px;
+}
+
+.definition-list {
+    margin-left: 20px;
+}
+
+.definition-list dt {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.definition-list dd {
+    margin-left: 20px;
+    color: #555;
+}
+
+.graphic-list {
+    list-style: none; /* Remove default bullets */
+    padding-left: 0;
+}
+
+.graphic-list li {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.graphic-list img {
+    margin-right: 10px; /* Spacing between bullet and text */
+}
+
+ul li, ol li {
+    transition: background-color 0.3s, transform 0.2s; /* Animation effects */
+}
+
+ul li:hover, ol li:hover {
+    background-color: #e6f7ff; /* Light blue on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.limg{
+    width: 50px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}

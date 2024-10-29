@@ -1,0 +1,18 @@
+/* External CSS */
+
+body {
+    background-color: #f0f8ff; /* Light background */
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+h1 {
+    color: #4CAF50;
+}
+
+h2 {
+    color: #555;
+}
